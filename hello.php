@@ -6,7 +6,7 @@
         Hello HTML
         <BR>
     <?php
-    echo "Hello PHP";
+    echo "Hello PHP\n";
     ?>
     </body>
 </html>
