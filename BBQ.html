@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>系烤報名網頁</title>
+<meta charset="utf-8">
+</head>
+<body text="#800000" bgcolor="#FFDAB9" background="https://th.bing.com/th/id/OIP.r9Ty_UqAUWnpcN5kpYWurgD6D6?pid=ImgDet&rs=1">
+<img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2020/10/01/realtime/8668951.jpeg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1" width="70%" height="40%">
+<br/><h1><b>歡迎來到系烤報名表單</b></h1><br/>
+<h2>一‧基本資料</h2>
+<b>時段表：</b><br/>
+<table border="2">
+<tr><td bgcolor="#B399FF"></td><th bgcolor="#B399FF">一</th><th bgcolor="#B399FF">三</th><th bgcolor="#B399FF">五</th></tr>
+<tr><td bgcolor="#B399FF">17：00～19：00</td><td bgcolor="#CCCCFF">1</td><td bgcolor="#CCCCFF">4</td><td bgcolor="#CCCCFF">7</td></tr>
+<tr><td bgcolor="#B399FF">18：00～20：00</td><td bgcolor="#CCCCFF">2</td><td bgcolor="#CCCCFF">5</td><td bgcolor="#CCCCFF">8</td></tr>
+<tr><td bgcolor="#B399FF">19：00～21：00</td><td bgcolor="#CCCCFF">3</td><td bgcolor="#CCCCFF">6</td><td bgcolor="#CCCCFF">9</td></tr>
+</table><br/>
+<form action="BBQ_collect.php" method="post">
+<b>哪些時段有空：</b><br/>
+<input type="checkbox" name="time1">1
+<input type="checkbox" name="time2">2
+<input type="checkbox" name="time3">3
+<input type="checkbox" name="time4">4
+<input type="checkbox" name="time5">5
+<input type="checkbox" name="time6">6
+<input type="checkbox" name="time7">7
+<input type="checkbox" name="time8">8
+<input type="checkbox" name="time9">9
+<input type="checkbox" name="time10">都沒空<br/>
+
+學號：<input type="text" name="id" placeholder="首字母請大寫" required><br/>
+姓名：<input type="text" name="name" required><br/>
+年級：<select required name="year">
+<option>大一
+<option>大二
+<option>大三
+<option>大四
+<option>大五以上
+</select><br/>
+性別：
+<input type="radio" name="gender" value="male" required>男
+<input type="radio" name="gender" value="female">女<br/>
+
+信箱：<input type="email" name="email" required><br/>
+
+<h2>二‧意願程度(沒想法可跳過)</h2>
+最希望辦在哪天：<input type="date" name="date"><br/>
+時間點：<input type="time" name="time"><br/>
+其他想法：<textarea cols="20" rows="10" name="opinion"></textarea><br/>
+<br/>
+輸入邀請密碼：<input type="password" name="psw" value="justapsw" required><br/>
+
+<input type="submit">
+<input type="reset">
+</form>
+
+<a href="#top">回頁首</a>
+</body>
+
+</html>
